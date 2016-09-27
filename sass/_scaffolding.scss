@@ -55,7 +55,7 @@ textarea {
 // Links
 a {
   color: $link-color;
-  text-decoration: underline;
+  text-decoration: none;
   @include transition(color .3s);
 
   &:hover {

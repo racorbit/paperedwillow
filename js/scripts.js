@@ -7,6 +7,27 @@
 jQuery(document).ready(function($) {
 	'use strict';
 
+	// Set Copyright year
+	//------------------------------------------------------------------------------
+	$('.current_year').text(new Date().getFullYear());
+
+	// Mail Chimp Mailer
+	//------------------------------------------------------------------------------
+	$(".subscribe-form").ajaxChimp({
+		callback: mailchimpResponse,
+		url: "http://paperedwillow.us14.list-manage.com/subscribe/post?u=4eab77964deae1a034e60381f&amp;id=c9b2d9c470"
+	});
+
+	function mailchimpResponse(resp) {
+		 if(resp.result === 'success') {
+
+			$('.alert-success').html(resp.msg).fadeIn().delay(8000).fadeOut();
+
+		} else if(resp.result === 'error') {
+			$('.alert-warning').html(resp.msg).fadeIn().delay(8000).fadeOut();
+		}
+	};
+
 	// Check if Page Scrollbar is visible
 	//------------------------------------------------------------------------------
 	var hasScrollbar = function() {
