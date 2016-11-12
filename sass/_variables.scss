@@ -175,8 +175,8 @@ $dropdown-arrow-size:     22px;
 $lang-dropdown-width:     106px;
 $lang-dropdown-bg:        #fff;
 
-$toolbar-width-desktop:     120px;
-$toolbar-width-mobile:      160px;
+$toolbar-width-desktop:     236px;
+$toolbar-width-mobile:      200px;
 $toolbar-toggle-icon-size:  24px;
 
 $nav-link-font-size: 				floor(($font-size-base * 0.875)); // ~14px
@@ -396,4 +396,5 @@ $tablet-land:      "screen and (max-width: 991px)";
 $tablet-port:    	 "screen and (max-width: 768px)";
 $mobile-land:		 	 "screen and (max-width: 480px)";
 $mobile-port:		 	 "screen and (max-width: 360px)";
-$navbar-collapse:	 "screen and (max-width: 1070px)";
+$navbar-collapse:	 "screen and (max-width: 1154px)";
+// $navbar-collapse:	 "screen and (max-width: 1070px)";

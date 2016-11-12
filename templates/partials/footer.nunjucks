@@ -1,0 +1,44 @@
+<!-- footer.nunjucks -->
+<!-- Footer -->
+<footer class="footer space-top-2x">
+  <div class="column">
+    <p class="text-sm">Have a question? <a href="contacts.html">Contact us!</a></p>
+    <div class="social-bar text-center space-bottom">
+      <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+        <i class="socicon-facebook"></i>
+      </a>
+      <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+        <i class="socicon-twitter"></i>
+      </a>
+      <a href="#" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+        <i class="socicon-instagram"></i>
+      </a>
+      <a href="#" class="sb-tumblr" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tumblr">
+        <i class="socicon-tumblr"></i>
+      </a>
+    </div><!-- .social-bar -->
+    <p class="copyright">&copy; <span class="current_year"></span>. The Papered Willow.</p>
+  </div><!-- .column -->
+  <div class="column">
+    <h3 class="widget-title">
+      Subscription
+      <small>To receive updates, design tips and discounts on our products.</small>
+    </h3>
+
+    <p class="alert-success"></p>
+    <p class="alert-warning"></p>
+    <form class="subscribe-form" role="form">
+      <input type="email" class="form-control" name="EMAIL" id="email" placeholder="Your e-mail" required>
+      <button type="submit"><i class="material-icons send"></i></button>
+    </form>
+  </div><!-- .column -->
+  <div class="column">
+    <h3 class="widget-title">
+      Payment Methods
+      <small>We securely accept the following payment methods.</small>
+    </h3>
+    <div class="cards"><img src="img/cards.png" alt="Cards"></div>
+    <!-- Scroll To Top Button -->
+    <div class="scroll-to-top-btn"><i class="material-icons trending_flat"></i></div>
+  </div><!-- .column -->
+</footer><!-- .footer -->

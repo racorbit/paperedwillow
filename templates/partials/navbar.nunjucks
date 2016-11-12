@@ -1,0 +1,48 @@
+<!-- navbar.nunjucks -->
+<!-- Navbar -->
+<!-- Remove ".navbar-sticky" class to make navigation bar scrollable with the page. -->
+<header class="navbar navbar-sticky">
+
+  <!-- Site Logo -->
+  <a href="index.html" class="site-logo visible-desktop">
+    <img src="img/logo-3.png" alt="The Papered Willow">
+  </a><!-- site-logo.visible-desktop -->
+  <a href="index.html" class="site-logo visible-mobile">
+    <img src="img/logo-3.png" alt="The Papered Willow">
+  </a><!-- site-logo.visible-mobile -->
+
+  <!-- Main Navigation -->
+  <!-- Control the position of navigation via modifier classes: "text-left, text-center, text-right" -->
+  <nav class="main-navigation text-center">
+    <ul class="menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+      {# <li class="menu-item-has-children"> #}
+        <a data-scroll class="data-scroll" href="#shop">Shop</a>
+        {# <ul class="sub-menu">
+          <li><a href="shop-fullwidth-sl.html">Full Width Sidebar Left</a></li>
+          <li><a href="shop-fullwidth-sr.html">Full Width Sidebar Right</a></li>
+          <li><a href="shop-fullwidth-ft.html">Full Width Filters Top</a></li>
+          <li><a href="shop-boxed-sl.html">Boxed Sidebar Left</a></li>
+          <li><a href="shop-boxed-sr.html">Boxed Sidebar Right</a></li>
+          <li><a href="shop-boxed-ft.html">Boxed Filters Top</a></li>
+          <li><a href="shop-single.html">Single Product</a></li>
+        </ul>
+         #}
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      {# <li><a href="blog.html">Blog</a></li> #}
+    </ul><!-- .menu -->
+  </nav><!-- .main-navigation -->
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="inner">
+      <a href="#" class="mobile-menu-toggle"><i class="material-icons menu"></i></a>
+    </div><!-- .inner -->
+  </div><!-- .toolbar -->
+</header><!-- .navbar.navbar-sticky -->

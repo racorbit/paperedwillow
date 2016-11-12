@@ -1,0 +1,57 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Papered Willow | Custom decor hand-made with love </title>
+  <!--SEO Meta Tags-->
+  <meta name="description" content="The Papered Willow - Custom decor hand-made with love" />
+  <meta name="keywords" content="decor, interior decor, interior design, rustic, rustic chic, handmade, hand painted, wood, signs, wood signs, wood art, scripture art, wall art, art & collectibles" />
+  <meta name="author" content="Cheryl Corbit" />
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Google Material Icons -->
+  <link href="css/vendor/material-icons.min.css" rel="stylesheet" media="screen">
+  <!-- Brand Icons -->
+  <link href="css/vendor/socicon.min.css" rel="stylesheet" media="screen">
+  <!-- Bootstrap -->
+  <link href="css/vendor/bootstrap.min.css" rel="stylesheet" media="screen">
+  <!-- Theme Styles -->
+  <link href="css/theme.min.css" rel="stylesheet" media="screen">
+  <!-- Page Preloading -->
+  <script src="js/vendor/page-preloading.js"></script>
+  <!-- Modernizr -->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <!-- Smooth-scroll -->
+  <script src="js/vendor/smooth-scroll.min.js"></script>
+</head>
+
+<!-- Body -->
+<!-- Adding/Removing class ".page-preloading" is enabling/disabling background smooth page transition effect and spinner. Make sure you also added/removed link to page-preloading.js script in the <head> of the document. -->
+<body class="page-preloading">
+  <!-- Page Pre-Loader -->
+  <div class="page-preloader">
+    <div class="preloader">
+      <img src="img/preloader.gif" alt="Preloader">
+    </div>
+  </div><!-- .page-preloader -->
+
+  {% block content %} {% endblock %}
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/icheck.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/nouislider.min.js"></script>
+  <script src="js/vendor/jquery.ajaxchimp.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body><!-- <body> -->
+</html>

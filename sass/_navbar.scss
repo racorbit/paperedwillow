@@ -302,7 +302,7 @@
 	left: 0;
 	top: 0;
 	padding: {
-		right: ($toolbar-width-desktop + 50);
+		right: ($toolbar-width-desktop + 145);
 		left: ($image-logo-width + 145);
 	}
 	> .menu {
@@ -397,6 +397,7 @@
 
 // Mobile Menu Togle
 .mobile-menu-toggle {
+	text-align: right!important;
 	> i {
 		position: relative;
 		display: inline-block;

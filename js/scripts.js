@@ -11,6 +11,29 @@ jQuery(document).ready(function($) {
 	//------------------------------------------------------------------------------
 	$('.current_year').text(new Date().getFullYear());
 
+	// Set Active Navbar Links
+	//------------------------------------------------------------------------------
+	setCurrentMenuItem();
+
+	window.onhashchange = function () {
+		setCurrentMenuItem();
+	}
+
+	function setCurrentMenuItem() {
+		var current_page_arr = []
+		var current_page_name
+		current_page_arr = location.pathname.split("/");
+		if (location.hash.length == 0) {
+			current_page_name = current_page_arr[current_page_arr.length - 1];
+		} else {
+			$('.current-menu-item').removeClass('current-menu-item');
+			current_page_name = location.hash;
+			$('.mobile-menu-toggle').removeClass('active');
+			$('.main-navigation').removeClass('open');
+		}
+	  $('nav a[href^="' + current_page_name + '"]').parent().addClass('current-menu-item');
+	};
+
 	// Mail Chimp Mailer
 	//------------------------------------------------------------------------------
 	$(".subscribe-form").ajaxChimp({
@@ -119,6 +142,13 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 	});
 
+
+	// Smooth-scroll to Anchor (different js plugin then Smooth Scroll above)
+	//------------------------------------------------------------------------------
+	smoothScroll.init({
+    speed: 900, // Integer. How fast to complete the scroll in milliseconds
+    offset: 40, // Integer. How far to offset the scrolling anchor location in pixels
+});
 
 	// Language Dropdown
 	//------------------------------------------------------------------------------
@@ -435,7 +465,7 @@ jQuery(document).ready(function($) {
 
 		var	loop = $(this).parent().data('loop'),
 				autoplay = $(this).parent().data('autoplay'),
-				interval = $(this).parent().data('interval') || 3000;
+				interval = $(this).parent().data('interval') || 4000;
 
 			$(this).owlCarousel({
 				items: 1,
