@@ -615,6 +615,5 @@
     </section><!-- .container -->
 
     {% include "partials/footer.nunjucks" %}
-
   </div><!-- .page-wrapper -->
 {% endblock %}

@@ -20,17 +20,18 @@ jQuery(document).ready(function($) {
 	}
 
 	function setCurrentMenuItem() {
-		var current_page_arr = []
-		var current_page_name
-		current_page_arr = location.pathname.split("/");
-		if (location.hash.length == 0) {
-			current_page_name = current_page_arr[current_page_arr.length - 1];
-		} else {
+		var current_page_name = location.pathname.split('/').slice(-1)[0]
+		if (location.hash.length > 0) {
+			console.log('ok');
 			$('.current-menu-item').removeClass('current-menu-item');
 			current_page_name = location.hash;
 			$('.mobile-menu-toggle').removeClass('active');
 			$('.main-navigation').removeClass('open');
+			console.log(current_page_name);
 		}
+		if (current_page_name != "index.html" && current_page_name != "#shop") {
+			$('nav a[href^="#shop"]').attr('href', 'index.html#shop');
+		};
 	  $('nav a[href^="' + current_page_name + '"]').parent().addClass('current-menu-item');
 	};
 
