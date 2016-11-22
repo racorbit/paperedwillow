@@ -227,7 +227,7 @@
         <div class="col-md-4 col-sm-6">
           <div class="shop-item">
             <div class="shop-thumbnail">
-              <span class="shop-label text-warning">Popular</span>
+              {# <span class="shop-label text-warning">Popular</span> #}
               <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
               <img src="img/shop/7-life-is-good.png" alt="Shop item">
               <div class="shop-item-tools">
@@ -276,13 +276,13 @@
         <div class="col-md-4 col-sm-6">
           <div class="shop-item">
             <div class="shop-thumbnail">
-              <span class="item-rating text-warning">
+              {# <span class="item-rating text-warning">
                 <i class="material-icons star"></i>
                 <i class="material-icons star"></i>
                 <i class="material-icons star"></i>
                 <i class="material-icons star"></i>
                 <i class="material-icons star_border"></i>
-              </span>
+              </span> #}
               <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
               <img src="img/shop/9-made-to-shine.png" alt="Shop item">
               <div class="shop-item-tools">
@@ -403,13 +403,6 @@
         <div class="col-md-4 col-sm-6">
           <div class="shop-item">
             <div class="shop-thumbnail">
-              <span class="item-rating text-warning">
-                <i class="material-icons star"></i>
-                <i class="material-icons star"></i>
-                <i class="material-icons star"></i>
-                <i class="material-icons star_half"></i>
-                <i class="material-icons star_border"></i>
-              </span>
               <a href="https://www.etsy.com/ca/listing/493474637/custom-scrabble-signs-handmade-wood?ref=shop_home_active_2" class="item-link"></a>
               <img src="img/shop/14-scrabble.png" alt="Shop item">
               <div class="shop-item-tools">
