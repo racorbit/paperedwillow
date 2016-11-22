@@ -14,29 +14,37 @@
     <section class="container padding-top-2x padding-bottom-2x">
       <h1>About</h1>
       <div class="row padding-top">
-        <div class="col-md-5 col-sm-6 padding-bottom">
+        <div class="col-md-10 col-sm-12 padding-bottom">
           <h3>The Papered Willow Story</h3>
-          <p class=" space-top">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-        </div><!-- .col-md-5.col-sm-6 -->
+          <p class=" space-top">For as long as I can remember I've loved interior design, and over the past few years I’ve fallen in love with the vintage look of hand painted wooden signs!<br><br>
+
+I started my business with the purpose of creating handcrafted signs meant to inspire, encourage, and uplift those who enter your home. I believe our homes should reflect our values and who we are- simply put, our personalities should shine through!<br><br>
+
+I hope we can work together to bring something beautiful to your home- a piece that lasts throughout the years.<br><br><br>
+
+Thank you for stopping by!</p>
+
+        {# </div><!-- .col-md-5.col-sm-6 -->
         <div class="col-sm-6 col-md-offset-1 padding-bottom">
           <h3>Hello!</h3>
           <div class="quotation padding-top">
             <div class="quotation-author">
               <div class="quotation-author-ava">
-                <img src="img/team/quote_author.jpg" alt="James Cameron">
+                <img src="img/cheryl_avatar.jpg" alt="James Cameron">
               </div>
             </div>
             <blockquote>
               <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-              <cite>C.J. Cameron, Founder M-store Ltd.</cite>
+              <cite>Cheryl Corbit, Founder The Papered Willow</cite>
             </blockquote>
           </div><!-- .quotation -->
-        </div><!-- .col-md-6.col-sm-6.col-md-offset-1 -->
+        </div><!-- .col-md-6.col-sm-6.col-md-offset-1 --> #}
+
       </div><!-- .row -->
     </section><!-- .container -->
 
-    <!-- Featured Image -->
-    <div class="featured-image" style="background-image: url(img/featured-image/about.png);"></div>
+    {# <!-- Featured Image -->
+    <div class="featured-image" style="background-image: url(img/featured-image/about.png);"></div> #}
 
     {% include "partials/footer.nunjucks" %}
   </div><!-- .page-wrapper -->
