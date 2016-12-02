@@ -50,8 +50,8 @@
         <div class="slide" style="background-image: url(img/hero-slider/3-gray-horizontal1.jpg);">
           <div class="container">
             <div class="absolute center from-top" style="top: 15%; width: 100%;">
-              <span class="text-center h1 dark-text">Sign up for our eNewsletter</span>
-              <span class="text-center h3 dark-text hidden-xs">Design tips and inspiration to your Inbox!</span>
+              <span class="text-center h1 dark-text">Sign up for our eNewsletter!</span>
+              <span class="text-center h3 dark-text hidden-xs">Design tips and inspiration for your home<sup><small>&#8224;</small></sup></span>
               <div class="center" style="width: 100%;">
                 {% include "partials/signup_form.nunjucks" %}
               </div>
