@@ -26,6 +26,12 @@
       display: block;
       margin-bottom: 0;
       color: $white;
+      &.dark-text {color: $gray-darker;}
+    }
+    .subscribe-form-alerts {
+      max-width: 600px;
+      margin: 50px auto 20px auto;
+      p {color: $gray-darker;}
     }
   }
   .owl-carousel .owl-controls .owl-nav {
