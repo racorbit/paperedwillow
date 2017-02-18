@@ -5,10 +5,10 @@
 
   <!-- Site Logo -->
   <a href="index.html" class="site-logo visible-desktop">
-    <img src="img/logo-3.png" alt="The Papered Willow">
+    <img src="img/pw-website-logo-feb.17.17.png" alt="The Papered Willow">
   </a><!-- site-logo.visible-desktop -->
   <a href="index.html" class="site-logo visible-mobile">
-    <img src="img/logo-3.png" alt="The Papered Willow">
+    <img src="img/pw-website-logo-feb.17.17.png" alt="The Papered Willow">
   </a><!-- site-logo.visible-mobile -->
 
   <!-- Main Navigation -->

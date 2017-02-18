@@ -17,7 +17,7 @@
     <section class="hero-slider" data-loop="true" data-autoplay="true" data-interval="7000">
       <div class="inner">
 
-        <div class="slide" style="background-image: url(img/hero-slider/scrabble-sep.23.16.png);">
+        {# <div class="slide" style="background-image: url(img/hero-slider/scrabble-sep.23.16.png);">
           <div class="container">
             <div class="absolute from-right" style="top: 5%; right: 23%">
               <span class="text-center h1 hidden-xs">Scrabble<br> Style Wall-Art</span>
@@ -30,7 +30,7 @@
               </a>
             </div>
           </div>
-        </div><!-- .slide -->
+        </div><!-- .slide --> #}
 
         <div class="slide" style="background-image: url(img/hero-slider/Home-sep.26.16.png);">
           <div class="container">
