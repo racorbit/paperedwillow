@@ -1,0 +1,569 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    {% include "partials/navbar.nunjucks" %}
+
+    <!-- Hero Slider -->
+    <!-- Data API:
+      data-loop="true/false" enable/disable looping
+      data-autoplay="true/false" enable/disable carousel autoplay
+      data-interval="3000" autoplay interval timeout in miliseconds
+      Simply add necessary data attribute to the ".hero-carousel" with appropriate value to adjust carousel functionality.
+     -->
+    <section class="hero-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+      <div class="inner">
+
+        {# <div class="slide" style="background-image: url(img/hero-slider/scrabble-sep.23.16.png);">
+          <div class="container">
+            <div class="absolute from-right" style="top: 5%; right: 23%">
+              <span class="text-center h1 hidden-xs">Scrabble<br> Style Wall-Art</span>
+              <span class="h3 text-right">$7 per tile</span>
+            </div>
+            <div class="absolute text-right from-left" style="bottom: 13%; left: 15px;">
+              <a href="https://www.etsy.com/ca/listing/493474637/custom-scrabble-signs-handmade-wood?ref=shop_home_active_2" class="btn btn-primary btn-with-icon-right waves-effect waves-light space-top-none">
+                Buy on Etsy
+                <i class="material-icons arrow_forward"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- .slide --> #}
+
+        <div class="slide" style="background-image: url(img/hero-slider/Home-sep.26.16.png);">
+          <div class="container">
+            <div class="absolute from-left" style="top: 3%;">
+              <span class="text-left h1 hidden-xs">Custom<br>Rustic Signs</span>
+              <span class="h3">from $15</span>
+            </div>
+            <div class="absolute text-right from-right" style="bottom: 13%; right: 15px;">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="btn btn-primary btn-with-icon-right waves-effect waves-light space-top-none">
+                Buy on Etsy
+                <i class="material-icons arrow_forward"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- .slide -->
+
+        <div class="slide" style="background-image: url(img/hero-slider/3-gray-horizontal1.jpg);">
+          <div class="container">
+            <div class="absolute center from-top" style="top: 15%; width: 100%;">
+              <span class="text-center h1 dark-text">Sign up for our eNewsletter!</span>
+              <span class="text-center h3 dark-text hidden-xs">Design tips and inspiration for your home<sup><small>&#8224;</small></sup></span>
+              <div class="center" style="width: 100%;">
+                {% include "partials/signup_form.nunjucks" %}
+              </div>
+            </div>
+          </div>
+        </div><!-- .slide -->
+
+      </div><!-- .inner -->
+    </section><!-- .hero-slider -->
+
+    <!-- Filters Bar -->
+    <section id="shop" class="container padding-top-3x">
+      {# <div class="filters-bar space-top-half">
+          <!-- Nav Filters -->
+          <ul class="nav-filters">
+            <li class="active"><a href="#">All</a> <sup>16</sup></li>
+            <li><a href="#">Featured</a> <sup>42</sup></li>
+            <li><a href="#">Seasonal</a> <sup>56</sup></li>
+            <li><a href="#">Indoor/Outdoor</a> <sup>28</sup></li>
+            <li><a href="#">Framed</a> <sup>10</sup></li>
+          </ul>
+      </div> #}
+    </section><!-- .container -->
+
+    <!-- Shop Catalog -->
+    <section class="container padding-bottom-3x">
+      <div class="row">
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              {# <span class="shop-label text-danger">Sale</span> #}
+              <a href="https://www.etsy.com/ca/listing/479958052/blessed-wood-sign-hand-painted-rustic?ref=shop_home_active_6" class="item-link"></a>
+              <img src="img/shop/1-blessed.png" alt="Shop item">
+              <div class="shop-item-tools">
+                {# <form action="https://papered-willow.herokuapp.com/" method="POST">
+                  <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_UEJLcgJScQ7hVOCL7KiDzLxS"
+                    data-amount="25"
+                    data-name="Papered Willow"
+                    data-description="Widget"
+                    data-image="https://s3.amazonaws.com/stripe-uploads/acct_19IAApFj93bINTd6merchant-icon-1479707254668-logo-1-square.png"
+                    data-locale="auto"
+                    data-currency="cad">
+                  </script>
+                </form> #}
+                <a href="https://www.etsy.com/ca/listing/479958052/blessed-wood-sign-hand-painted-rustic?ref=shop_home_active_6" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/479958052/blessed-wood-sign-hand-painted-rustic?ref=shop_home_active_6">Blessed wood sign</a></h3>
+              <span class="shop-item-price">
+                {# <span class="old-price">$30.00</span> #}
+                $22.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/493458213/open-daily-wood-sign-hand-painted-rustic?ref=shop_home_active_5" class="item-link"></a>
+              <img src="img/shop/3-one-daily.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/493458213/open-daily-wood-sign-hand-painted-rustic?ref=shop_home_active_5" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/493458213/open-daily-wood-sign-hand-painted-rustic?ref=shop_home_active_5">Open daily wood sign</a></h3>
+              <span class="shop-item-price">
+                $22.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/493455643/thankful-wood-sign-hand-painted-rustic?ref=shop_home_active_6" class="item-link"></a>
+              <img src="img/shop/2-thankful.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/493455643/thankful-wood-sign-hand-painted-rustic?ref=shop_home_active_6" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/493455643/thankful-wood-sign-hand-painted-rustic?ref=shop_home_active_6">Thankful wood sign</a></h3>
+              <span class="shop-item-price">
+                $22.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        {# <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="#" class="item-link"></a>
+              <img src="img/shop/6-sparkle.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="#" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="#">Alarm Clock</a></h3>
+              <span class="shop-item-price">
+                $178.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="#" class="item-link"></a>
+              <img src="img/shop/12-beautiful.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="#" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="#">Wall Clock</a></h3>
+              <span class="shop-item-price">
+                $69.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="#" class="item-link"></a>
+              <img src="img/shop/4-thankful2.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="#" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="#">LED Lighting</a></h3>
+              <span class="shop-item-price">
+                $130.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 --> #}
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              {# <span class="shop-label text-warning">Popular</span> #}
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/7-life-is-good.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Life is good wood sign</a></h3>
+              <span class="shop-item-price">
+                $17.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/8-loved.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Loved wood sign</a></h3>
+              <span class="shop-item-price">
+                $17.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              {# <span class="item-rating text-warning">
+                <i class="material-icons star"></i>
+                <i class="material-icons star"></i>
+                <i class="material-icons star"></i>
+                <i class="material-icons star"></i>
+                <i class="material-icons star_border"></i>
+              </span> #}
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/9-made-to-shine.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Made to shine wood sign</a></h3>
+              <span class="shop-item-price">
+                $17.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/11-joy.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Joy wood sign</a></h3>
+              <span class="shop-item-price">
+                $15.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/13-birds.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Two birds wood sign</a></h3>
+              <span class="shop-item-price">
+                $17.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/10-home.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Home wood sign</a></h3>
+              <span class="shop-item-price">
+                $22.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/495940839/o-come-let-us-adore-him-wood-sign?ref=shop_home_active_1" class="item-link"></a>
+              <img src="img/shop/5-Come-letUS.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/495940839/o-come-let-us-adore-him-wood-sign?ref=shop_home_active_1" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/495940839/o-come-let-us-adore-him-wood-sign?ref=shop_home_active_1">Christmas wood sign</a></h3>
+              <span class="shop-item-price">
+                $22.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/493474637/custom-scrabble-signs-handmade-wood?ref=shop_home_active_2" class="item-link"></a>
+              <img src="img/shop/14-scrabble.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/493474637/custom-scrabble-signs-handmade-wood?ref=shop_home_active_2" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/493474637/custom-scrabble-signs-handmade-wood?ref=shop_home_active_2">Custom scrabble sign</a></h3>
+              <span class="shop-item-price">
+                $7.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/493455643/thankful-wood-sign-hand-painted-rustic?ref=shop_home_active_6" class="item-link"></a>
+              <img src="img/shop/2-thankful.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/493455643/thankful-wood-sign-hand-painted-rustic?ref=shop_home_active_6" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/493455643/thankful-wood-sign-hand-painted-rustic?ref=shop_home_active_6">Thankful wood sign</a></h3>
+              <span class="shop-item-price">
+                $22.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/15-ClothesPin.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Framed wood sign</a></h3>
+              <span class="shop-item-price">
+                $40.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/480869602/deer-sign-wood-hand-painted-rustic-decor?ref=shop_home_active_9" class="item-link"></a>
+              <img src="img/shop/18-reindeer.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/480869602/deer-sign-wood-hand-painted-rustic-decor?ref=shop_home_active_9" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/480869602/deer-sign-wood-hand-painted-rustic-decor?ref=shop_home_active_9">Deer wood sign</a></h3>
+              <span class="shop-item-price">
+                $30.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="item-link"></a>
+              <img src="img/shop/16-welcome.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/shop/ThePaperedWillow?ref=l2-shopheader-name">Welcome wood sign</a></h3>
+              <span class="shop-item-price">
+                $40.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+        <!-- Item -->
+        <div class="col-md-4 col-sm-6">
+          <div class="shop-item">
+            <div class="shop-thumbnail">
+              <a href="https://www.etsy.com/ca/listing/495937899/trio-of-trees?ref=shop_home_active_2" class="item-link"></a>
+              <img src="img/shop/17-3-trees.png" alt="Shop item">
+              <div class="shop-item-tools">
+                <a href="https://www.etsy.com/ca/listing/495937899/trio-of-trees?ref=shop_home_active_2" class="add-to-cart">
+                  <em>Buy on Etsy</em>
+                  <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="shop-item-details">
+              <h3 class="shop-item-title"><a href="https://www.etsy.com/ca/listing/495937899/trio-of-trees?ref=shop_home_active_2">Trio of trees wood sign</a></h3>
+              <span class="shop-item-price">
+                $40.00
+              </span>
+            </div>
+          </div><!-- .shop-item -->
+        </div><!-- .col-md-4.col-sm-6 -->
+
+      </div><!-- .row -->
+
+      {# <!-- Load More Btn -->
+      <a href="#" class="load-more-btn space-top">Load More <sup>25</sup></a> #}
+    </section><!-- .container -->
+
+    {% include "partials/footer.nunjucks" %}
+  </div><!-- .page-wrapper -->
+{% endblock %}

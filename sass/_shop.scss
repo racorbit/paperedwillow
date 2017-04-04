@@ -10,6 +10,11 @@
     position: relative;
     background-color: $shop-item-thumb-bg;
     overflow: hidden;
+    height: 240px;
+    @media #{$desktop} { height: 200px; }
+    @media #{$tablet-land} { height: 240px; }
+    @media #{$tablet-port} { height: 320px; }
+    @media #{$mobile-land} { height: 260px; }
     .item-link {
       position: absolute;
       display: block;
